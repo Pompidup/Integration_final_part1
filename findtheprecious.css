@@ -1,3 +1,15 @@
+@font-face {
+    font-family: "title_anicb";
+    src: url("/fonts/anicb___.ttf");
+  }
+@font-face {
+    font-family: "symbole_tngan";
+    src: url("/fonts/tngan.ttf");
+}
+  
+h1 {
+    font-family: "title_anicb";
+}
 .card-img {
     opacity: 0.6;
 }
@@ -41,10 +53,4 @@
 
 .banniere img{
     max-height: 400px;
-}
-.gollum {
-    max-width: 110px;
-    max-height: 110px;
-    float: right;
-    
 }
