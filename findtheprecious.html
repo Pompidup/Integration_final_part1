@@ -4,13 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="findtheprecious.css">
   <title>Findtheprecious</title>
 </head>
 
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -39,28 +41,29 @@
           </li>
         </ul>
       </div>
-    </nav>
+      </nav>
+    
     <div class="banniere">
         <div id="carouselbanniere" class="carousel slide carousel-fade" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="https://via.placeholder.com/640x140" class="d-block w-100" alt="banniere">
+              <img src="https://i.goopics.net/3Jd7b.jpg" class="d-block w-100 img-fluid" alt="banniere">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Dangerous fellowship try to destroy the ring</h5>
                 <p>Orcs, Goblins, Balrogs, protect your master Sauron !</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="https://via.placeholder.com/640x140" class="d-block w-100" alt="banniere">
+              <img src="https://i.goopics.net/nGKep.jpg" class="d-block w-100 img-fluid" alt="banniere">
               <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
+                <h5>Kill this guys !!</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="https://via.placeholder.com/640x140" class="d-block w-100" alt="banniere">
+              <img src="https://i.goopics.net/9Jd7w.jpg" class="d-block w-100 img-fluid" alt="banniere">
               <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
+                <h5>Join Us for resist</h5>
                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
               </div>
             </div>
@@ -75,139 +78,245 @@
           </a>
         </div>
     </div>
-
+  </div>
   </header>
+  
   <section id="fellows">
-    <h2>Fellows wanted dead(or alive if you want to eat them later)</h2>
-    <h3>
-      <a href="#" class="badge badge-secondary">Most wanted</a>
-      <a href="#" class="badge badge-secondary">Most Dangerous</a>
-      <a href="#" class="badge badge-secondary">Already captured</a>
-    </h3>
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Reward 1000 gold coins</h5>
-          <img src="http://via.placeholder.com/200x200" class="card-img-top" alt="Wizard">
-          <p class="card-text"><strong>The Wizard</strong></p>
-          <p class="card-text">Extremly dangerous</p>
-        </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Dead</h5>
-          <img src="http://via.placeholder.com/200x200" class="card-img-top" alt="Hobbit #3">
-          <p class="card-text"><strong>The Wizard</strong></p>
-          <p class="card-text">Extremly dangerous</p>
-        </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Reward 250 gold coins</h5>
-          <img src="http://via.placeholder.com/200x200" class="card-img-top" alt="Yummy Dwarf">
-          <p class="card-text"><strong>The Wizard</strong></p>
-          <p class="card-text">Extremly dangerous</p>
-        </div>
-    </div>
+    <div class="container">
+      <h2>Fellows wanted dead(or alive if you want to eat them later)</h2>
+      <ul class="nav nav-pills mb-3 nav-pills nav-fill" id="pills-tab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#mostdangerous" role="tab" aria-controls="pills-home" aria-selected="true">mostdangerous</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#mostwanted" role="tab" aria-controls="pills-profile" aria-selected="false">mostwanted</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#alreadycaptured" role="tab" aria-controls="pills-contact" aria-selected="false">alreadycaptured</a>
+          </li>
+        </ul>
 
+        <div class="tab-content" id="pills-tabContent">
+  
+            <div class="tab-pane fade show active card-deck" id="mostdangerous" role="tabpanel" aria-labelledby="pills-home-tab">
+              <div class="row justify-content-center">
+              <div class="card ovl" style="width: 12rem;">
+                    <img src="http://images.innoveduc.fr/integration_gandalf.png" class="card-img" alt="Wizard">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title rounded"><strong>1000 gold coins</strong></h5>
+                      <p class="card-text"><strong>Gandalf</strong></p>
+                    </div>
+                    <div class="card-footer">
+                      <p>Extremly Dangerous</p>
+                    </div>
+                  </div>
+              <div class="card ovl" style="width: 12rem;">
+                    <img src="http://images.innoveduc.fr/integration_gandalf.png" class="card-img" alt="Hobbit#3">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title rounded">Dead</h5> 
+                      <p class="card-text"><strong>Hobbit #3</strong></p>
+                    </div>
+                    <div class="card-footer">
+                      <p>Extremly Dangerous</p>
+                    </div>
+                  </div>
+                     <div class="card ovl" style="width: 12rem;">
+                    <img src="http://images.innoveduc.fr/integration_gandalf.png" class="card-img" alt="Yummy Dwarf">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title rounded">Reward 250 gold coins</h5>
+                      <p class="card-text"><strong>Yummy Dwarf</strong></p>
+                    </div>
+                    <div class="card-footer">
+                      <p>Extremly Dangerous</p>
+                    </div>  
+                  </div>
+              </div>
+                
+            </div>
+            <div class="tab-pane fade" id="mostwanted" role="tabpanel" aria-labelledby="pills-profile-tab">..2.</div>
+            <div class="tab-pane fade" id="alreadycaptured" role="tabpanel" aria-labelledby="pills-contact-tab">.3..</div>
+          </div>
   </section>
+
   <hr>
-  <section id="reward">
-    <h2>I have captured one of them, how to get my reward ?</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut metus mi, bibendum eu pellentesque non, pretium a dolor. Aenean gravida, eros et imperdiet sodales, risus sem egestas quam, ac ultrices sem urna tempor leo. Suspendisse potenti. Vestibulum
-      ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis ornare luctus ex, vel congue ipsum interdum ac. Nam et justo non purus dictum ullamcorper. Aenean consectetur
-      porta lorem pellentesque condimentum. Aliquam scelerisque vel nulla eu sodales. Morbi maximus erat eu augue vehicula, eget euismod felis dapibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin mattis nisl pellentesque dolor
-      varius eleifend. Praesent sed diam id nulla pellentesque porttitor. Duis aliquam diam vel justo ornare molestie. Nunc euismod maximus mauris quis dignissim. Proin id vulputate nunc, in ultrices quam.</p>
-    <a href="http://placeholder.com"><img src="http://via.placeholder.com/140x140" alt="reward"></a>
-    <a href="#contact">Contact us</a>
-  </section>
+
+  <div class="container">
+    <div class="row">
+      <section id="reward">
+        <div class="col-md-12">
+          <h2>I have captured one of them, how to get my reward ?</h2>
+          <img src="http://via.placeholder.com/140x140" class="float-right" alt="reward">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut metus mi, bibendum eu pellentesque non, pretium a dolor. Aenean gravida, eros et imperdiet sodales, risus sem egestas quam, ac ultrices sem urna tempor leo. Suspendisse potenti. Vestibulum
+          ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis ornare luctus ex, vel congue ipsum interdum ac. Nam et justo non purus dictum ullamcorper. Aenean consectetur
+          porta lorem pellentesque condimentum. Aliquam scelerisque vel nulla eu sodales. Morbi maximus erat eu augue vehicula, eget euismod felis dapibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin mattis nisl pellentesque dolor
+          varius eleifend. Praesent sed diam id nulla pellentesque porttitor. Duis aliquam diam vel justo ornare molestie. Nunc euismod maximus mauris quis dignissim. Proin id vulputate nunc, in ultrices quam.</p>
+        </div>
+        <div class="col-md-12 text-center">
+            <a class="btn btn-outline-secondary row justify-content-center" href="#contact" role="button">Contact us</a>
+        </div>
+      </section>
+    </div>
+  </div>
+  
+
   <hr>
   <section id="besthunters">
-    <h2>Best hunters</h2>
-    <div>
-      <a href="http://placeholder.com"><img src="http://via.placeholder.com/70x70" alt="ElvesKiller22"></a>
-      <p><strong>ElvesKiller22</strong></p>
-      <p>2 captures -<a href="">Profile</a></p>
-      <input type="button" value="Like">
+    <div class="container">
+      <h2>Best hunters</h2>
+      <div class="row justify-content-around flex-wrap">
+        <div class="media" class="col-xs-6">
+          <img src="http://via.placeholder.com/70x70" class="align-self-center mr-3" alt="ElvesKiller22">
+          <div class="media-body">
+            <h5 class="mt-0">ElvesKiller22</h5>
+            <p>2 captures -<a href="">Profile</a></p>
+            <p class="mb-0"><button type="button" class="btn btn-secondary btn-sm"> &#128077; Like 68K</button></p>
+          </div>
+        </div>
+        <div class="media" class="col-xs-6">
+          <img src="http://via.placeholder.com/70x70" class="align-self-center mr-3" alt="Goblin45">
+          <div class="media-body">
+            <h5 class="mt-0">Goblin45</h5>
+            <p>2 captures -<a href="">Profile</a></p>
+            <p class="mb-0"><button type="button" class="btn btn-secondary btn-sm"> &#128077; Like 12K</button></p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div>
-      <a href="http://placeholder.com"><img src="http://via.placeholder.com/70x70" alt="Goblin45"></a>
-      <p><strong>Goblin45</strong></p>
-      <p>1 captures -<a href="">Profile</a></p>
-      <input type="button" value="Like">
-    </div>
   </section>
-  <hr>
-  <section id="thering">
-    <h2>About the ring</h2>
-    <h3>Ring Capabilities</h3>
-    <p>What can our master Sauron do with the ring ?</p>
-    <table>
-      <thead>
-        <tr>
-          <th>Feature</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Main</td>
-          <td>One ring to rules them all</td>
-        </tr>
-        <tr>
-          <td>Invisibility</td>
-          <td>You can't see me</td>
-        </tr>
-        <tr>
-          <td>Power</td>
-          <td>Destroy the world</td>
-        </tr>
-      </tbody>
-    </table>
-    <h3>Why the ring is awesome ?</h3>
-    <p>My preciooooooussssss ! Hrk Hrk, we want our preecioooouuuussss!!
-      <p>
-        <p>Gollum
-          <p>
-            <a href="http://placeholder.com"><img src="http://via.placeholder.com/110x110" alt="Gollum"></a>
-  </section>
-  <hr>
-  <section id="join">
-    <h2>Join Mordor Army, we need you !</h2>
-    <p>In magna lorem, consequat non quam egestas, hendrerit convallis risus. Integer feugiat ac tortor sit amet tincidunt. Sed eu massa id mauris fermentum ornare. Nulla blandit, magna a pretium accumsan, ex nibh rutrum nibh, quis varius augue magna at
-      lectus. Nulla aliquam metus at arcu euismod lobortis. Sed egestas nibh nec nibh venenatis sollicitudin eu at turpis. In aliquet augue tincidunt laoreet mollis. Donec porttitor nibh eu sapien efficitur volutpat eget id mauris. Sed ut dolor non leo
-      convallis rhoncus. Integer luctus arcu est, id interdum lacus accumsan eget. Maecenas at orci sit amet nisi efficitur posuere ut sed urna. Morbi nec ullamcorper dui. Etiam in justo ac purus vestibulum placerat ac porta dolor.</p>
-    <a href="http://placeholder.com"><img src="http://via.placeholder.com/140x140" alt="joinus"></a>
-    <a href="http://www.sauronrulesthemall.com">More info on SauronRulesThemAll.com</a>
-  </section>
-  <hr>
-  <section id="contact">
-    <h2>Contact us</h2>
-    <form method="post" action="traitement.php">
-      <p><label for="email">Your E-mail</label> : <input type="email" name="email" id="email" placeholder="example : pseudo@email.com" /></p>
-      <p><label for="adresse">Your adress</label> : <input type="text" name="adresse" id="adresse" placeholder="10 road blue, NY city" /></p>
-      <p><label for="subject">Subject</label> :
-        <select name="subject" id="subject">
-          <option value="see">I have seen one of them</option>
-          <option value="kill">I have kill one of them</option>
-          <option value="neighbour" selected>My neighbour is one of them</option>
-          <option value="iam">I am one of them</option>
-        </select>
-      </p>
-      <p><label for="message">Your message</label> : <textarea name="message" id="message" placeholder="I have found one, come quickly !" rows="10" cols="50"></textarea></p>
 
-    </form>
+  <hr>
+
+  <section id="thering">
+    <div class="container">
+      <h2>About the ring</h2>
+      <div class="card bg-light mb-3" style="max-width: 60rem;">
+          <div class="card-header">
+            <h5>Ring Capabilities</h5>
+          </div>
+          <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">What can our master Sauron do with the ring ?</h6>
+            <table class="table table-striped table-bordered table-sm">
+              <thead>
+                <tr class="table-dark">
+                  <th scope="col">Feature</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Main</td>
+                  <td>One ring to rules them all</td>
+                </tr>
+                <tr>
+                  <td>Invisibility</td>
+                  <td>You can't see me</td>
+                </tr>
+                <tr>
+                  <td>Power</td>
+                  <td>Destroy the world</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      </div>
+      <div class="card bg-light mb-3" style="max-width: 60rem;">
+          <div class="card-header">
+            <h5>Why the ring is awesome ?</h5>
+          </div>
+          <div class="card-body blockquote text-left">
+            <img src="http://via.placeholder.com/110x110" class="rounded-circle float-right" alt="gollum">
+            <p class="mb-0">My preciooooooussssss ! Hrk Hrk, we want our preecioooouuuussss!!</p>
+            <footer class="blockquote-footer">Gollum <cite title="Source Title">Lord of the ring</cite></footer>
+          </div>
+      </div>
+    </div>     
   </section>
+
+  <hr>
+
+  <section id="join">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Join Mordor Army, we need you !</h2>
+          <img src="http://via.placeholder.com/140x140" class="float-left" alt="joinus">
+          <p>In magna lorem, consequat non quam egestas, hendrerit convallis risus. Integer feugiat ac tortor sit amet tincidunt. Sed eu massa id mauris fermentum ornare. Nulla blandit, magna a pretium accumsan, ex nibh rutrum nibh, quis varius augue magna at
+            lectus. Nulla aliquam metus at arcu euismod lobortis. Sed egestas nibh nec nibh venenatis sollicitudin eu at turpis. In aliquet augue tincidunt laoreet mollis. Donec porttitor nibh eu sapien efficitur volutpat eget id mauris. Sed ut dolor non leo
+            convallis rhoncus. Integer luctus arcu est, id interdum lacus accumsan eget. Maecenas at orci sit amet nisi efficitur posuere ut sed urna. Morbi nec ullamcorper dui. Etiam in justo ac purus vestibulum placerat ac porta dolor.</p>
+        </div>
+        <div class="col-md-12 text-center">
+          <a class="btn btn-outline-secondary" href="http://www.sauronrulesthemall.com" role="button">More info on SauronRulesThemAll.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <hr>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact us</h2>
+      <form>
+        <label class="form-group" for="email"></label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">@</div>
+          </div>
+          <input type="text" class="form-control" id="email" placeholder="name@email.com">
+        </div>
+        
+        <label class="form-group" for="adress"></label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">Adress</div>
+          </div>
+          <input type="text" class="form-control" id="adress" placeholder="Tiny house behind the forest">
+        </div>
+      
+        <label class="form-group"></label>
+        <div class="input-group">  
+          <select class="custom-select form-control">
+            <option selected>My neighbour is one of them</option>
+            <option value="1">I have seen one of them</option>
+            <option value="2">I have kill one of them</option>
+            <option value="3">I am one of them</option>
+          </select>
+        </div>
+
+        <label class="form-group" for="message"></label>
+        <div class="input-group">
+          <textarea class="form-control" placeholder="I have found one, come quickly !"></textarea>
+        </div>
+      </form>
+    </div>
+  </section>
+
   <footer>
-    <ul>
-      <li><a href="aboutus">About us</a></li>
-      <li><a href="#fellows">Fellows</a></li>
-      <li><a href="#join">Join the army</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="#reward">Reward conditions</a></li>
-      <li><a href="#mentions">Legal mentions</a></li>
-      <li><a href="www.sauron4ever.com">Sauron4Ever.com</a></li>
-      <li><a href="twitter.com">Follow him on twitter</a></li>
-    </ul>
+    <div class="footer">
+      <div class="container">
+        <div class="row bg-dark justify-content-center align-items-center">
+          <div class="col-lg-3 col-md-6">
+            <ul class="list-unstyled">
+              <li><a href="#aboutus">About us</a></li>
+              <li><a href="#fellows">Fellows</a></li>
+              <li><a href="#join">Join the army</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-links2">
+            <ul class="list-unstyled">
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#reward">Reward conditions</a></li>
+              <li><a href="#mentions">Legal mentions</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-links3"></div>
+          <ul class="list-unstyled">
+            <li><a href="www.sauron4ever.com">Sauron4Ever.com</a></li>
+            <li><a href="twitter.com">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

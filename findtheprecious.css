@@ -1,0 +1,41 @@
+.card-img {
+    opacity: 0.6;
+}
+
+.ovl:hover img{
+    opacity: 1;
+    transition: 1s;
+}
+.ovl:hover .card-img-overlay{
+    opacity: 0;
+    transition: 1s;
+}
+
+
+    
+
+ .ovl h5{
+    color:orange;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+ }
+
+ .ovl .card-text{
+    text-align: center;
+    margin-top: 50%;
+}
+
+#join .float-left{
+    padding-right: 10px;
+}
+
+.footer .row{
+    text-decoration: none;   
+    margin: auto;
+}
+
+.footer a{
+    color: white;
+}
+
