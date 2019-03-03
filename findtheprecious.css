@@ -39,3 +39,12 @@
     color: white;
 }
 
+.banniere img{
+    max-height: 400px;
+}
+.gollum {
+    max-width: 110px;
+    max-height: 110px;
+    float: right;
+    
+}
