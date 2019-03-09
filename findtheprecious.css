@@ -11,11 +11,11 @@
     src: url("partybusiness.ttf");
 }
   
-h3,h1,h4,h5 {
+h3,h1,h4,h5,h2 {
     font-family: "title_anicb";
 }
-h2 {
-    font-family: "txt-partybusiness";
+p {
+    font-family: "txt_partybusiness";
 }
 .card-img {
     opacity: 0.6;
@@ -29,8 +29,6 @@ h2 {
     opacity: 0;
     transition: 1s;
 }
-
-
     
 
  .ovl h5{
@@ -63,12 +61,13 @@ h2 {
 }
 
 .navbar {
-    background-color: #fe661d;
+    background-color: #fe661d; 
 }
-.navbar .navbar-nav a{
+
+#navbar-nav a{
     color: white;
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 3px;
     
 }
 
@@ -79,6 +78,60 @@ h2 {
     font-family: "title_anicb";
     
 }
+
 #navbarNav li:last-child{
     border: none;
+}
+#navbarNav li:hover{
+    border-bottom-width: 3px;
+    border-bottom-color: white;
+    border-bottom-style: solid;
+    padding-bottom: 0;
+    
+
+}
+#fellows .nav-item a:hover{
+    border-bottom-width: 4px;
+    border-bottom-color: #fe661d;
+    border-bottom-style: solid;
+    color: #fe661d;
+    padding-bottom: 0;
+}
+#fellows .nav-item a{
+    padding-bottom: 4px;
+}
+
+#fellows a{
+    color: grey;
+    font-size: 1.5rem;
+}
+.carousel-caption p{
+    font-size: 3rem;
+}
+
+.img-fluid {
+    max-height: 400px;
+    margin: auto;
+}
+
+#fellows .container {
+    background-image: url("bg_light.png");
+    background-repeat: repeat;
+
+}
+
+.symbol{
+    font-family: "symbole_tngan";
+    color: #fe661d;
+}
+
+.nav-pills > li > a.active {
+ 
+    background-image: url("bg_light.png");
+    background-repeat: repeat;
+}
+
+.pills-home-tab > li > a.active {
+    background-image: url("bg_light.png");
+    background-repeat: repeat; 
 }
